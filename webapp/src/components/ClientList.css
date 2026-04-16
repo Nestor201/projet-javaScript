@@ -1,0 +1,64 @@
+.client-table {
+  margin: 20px auto;       /* centre horizontalement la table */
+  border-collapse: collapse;
+  width: 90vw;
+  max-width: 900vw;        /* limite la largeur */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  font-size: 1.2vw;
+}
+
+.client-table th,
+.client-table td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}
+.client-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 60%;
+}
+
+
+.client-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.client-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.client-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.client-table button {
+  padding: 6px 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.client-table button:hover {
+  background-color: #218838;
+}
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}

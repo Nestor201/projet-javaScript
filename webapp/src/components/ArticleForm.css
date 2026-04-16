@@ -1,0 +1,157 @@
+.article-form-container {
+  width: 40vw;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+
+}
+
+/* Titre centré si tu en ajoutes un */
+.article-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Bloc de recherche : codeArt + bouton */
+.search-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 8px;
+  width: 15vw;
+  border-radius: 4vw;
+  margin-left: auto;
+}
+
+.input-codeArt {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 4vw;
+  box-sizing: border-box;
+  min-width: 100px;
+}
+
+.btn-search {
+  padding: 6px 14px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-search:hover {
+  background-color: #2563eb;
+}
+
+/* Formulaire d'article */
+.article-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Champs de saisie */
+.article-form input {
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border: 1px solid #bbb;
+  border-radius: 4vw;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 22vw;
+  height:3vw;
+  text-align:center;
+}
+
+/* Groupe de boutons */
+.btn-group {
+  margin-top: 12px;
+  display: block;
+}
+
+.btn-group button,
+.article-form button {
+  display: block;
+  width: 50%;
+  margin-bottom: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4vw;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  height:3vw;
+  
+}
+
+.btn-submit {
+  background-color: #803bf6;
+}
+.btn-submit:hover {
+  background-color: #9f25eb;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+}
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+/* Message d'erreur */
+.error-msg {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .article-form-container {
+    padding: 1rem;
+  }
+
+  .search-block,
+  .article-form input {
+    width: 100%;
+  }
+
+  .btn-group button {
+    width: 100%;
+  }
+}
+.add-button {
+  background-color: #7690e8; 
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #5bd77673;
+}
+
+.edit-button {
+  background-color: #007bff; /* bleu */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #99b2cb;
+}
+

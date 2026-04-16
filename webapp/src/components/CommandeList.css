@@ -1,0 +1,78 @@
+.commande-table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80vw;
+  max-width: 900vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding:10vw;
+  font-size: 1.2vw;
+}
+
+.commande-table th,
+.commande-table td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+  
+}
+
+.commande-table th {
+  background-color: #6c757d; /* gris foncé */
+  color: white;
+}
+
+.commande-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.commande-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.commande-table button {
+  padding: 6px 12px;
+  background-color: #ffc107;
+  border: none;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.commande-table button:hover {
+  background-color: #e0a800;
+}
+.commande-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.commande-form input, .commande-form button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.facture-box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f8f8f8;
+  margin-top: 20px;
+}
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+

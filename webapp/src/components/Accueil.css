@@ -1,0 +1,131 @@
+/* Styles spécifiques pour la page d'accueil */
+.accueil-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .accueil-container h2 {
+    color: #f6dde8;
+    margin-bottom: 10px;
+    font-size: 4vw;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .accueil-container p {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.6vw;
+  }
+  
+  /* Tableau de bord (cartes) */
+  .dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 2vw;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Style des cartes */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 25vw;
+    height: 13vw;
+    font-size: 1vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+    animation: slideInUp 0.8s ease-in-out forwards; 
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); 
+    background-color: rgb(154, 185, 185);
+  }
+  
+  .card h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 2vw;
+  }
+  
+  .card p {
+    margin: 0 0 15px;
+    color: #095751c5;
+    font-size: 1.2vw;
+  }
+  
+  .card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design pour la page d'accueil */
+  @media (max-width: 768px) {
+    .dashboard {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  .card-image {
+    width: 10vw;
+    height: 8vw;
+    object-fit: contain;
+  }
+
+  /* Animation @keyframes pour le titre */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30vw); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+  }
+
+  /* Animation @keyframes pour les cartes */
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40vw); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Décalage temporel pour chaque carte */
+  .card:nth-child(1) {
+    animation-delay: 0.2s; 
+  }
+  .card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .card:nth-child(3) {
+    animation-delay: 0.6s; 
+  }
+
+  /* Désactiver le décalage en mode responsive */
+  @media (max-width: 768px) {
+    .card {
+      animation-delay: 0s; 
+    }
+  }

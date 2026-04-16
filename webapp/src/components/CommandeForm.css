@@ -1,0 +1,236 @@
+.commande-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 40vw;
+  margin: 20px auto;
+  gap: 3vw;
+  width: 30vw;
+  height:20vw;
+  
+}
+.commande-form-container {
+  width: 45vw;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+
+}
+
+/* Titre centré si tu en ajoutes un */
+.commande-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.commande-form input {
+  padding: 8px;
+  font-size: 16px;
+  width: 20vw;
+  border-radius: 6vw;
+  height:3vw;
+}
+
+.commande-form button {
+  padding: 2px;
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4vw;
+  width:20vw;
+  height:3vw;
+}
+
+.success {
+  color: rgb(0, 92, 128);
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+.facture-box {
+  border: 1px solid #ccc;
+  padding: 10vw;
+  margin-top: 1rem;
+  border-radius: 2vw;
+  background-color: #f9f9f9;
+  width: 40vw;
+  margin-left:5vw;
+  font-size: 1.5vw;
+
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  padding-top:5vw;
+}
+.fieldsetstyle {
+  border: 2px solid #007bff; 
+  padding: 15px 20px;
+  border-radius: 2vw;
+  margin-bottom: 20px;
+  background-color: #f9faff;
+}
+
+.fieldsetstyle input {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4vw;
+  box-sizing: border-box;
+  text-align:center;
+}
+/* Animation au clic */
+.bounce-click {
+  animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Styles pour le groupe de boutons */
+.button-group {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px; 
+}
+
+/* Styles de base pour les boutons */
+.button-group button {
+  padding: 8px 16px; 
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4vw;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease; 
+}
+
+/* Styles spécifiques pour les boutons avec animations et hover */
+.btn-submit {
+  background-color: #4b54dd;
+}
+.btn-submit:hover {
+  background-color: #cf8c3a; 
+  transform: scale(1.05); 
+}
+
+.btn-delete {
+  background-color: #dd1c23;
+}
+.btn-delete:hover {
+  background-color: #26dcc79f;
+  transform: scale(1.05); 
+}
+
+.btn-cancel {
+  background-color: #6c757d; 
+}
+.btn-cancel:hover {
+  background-color: #358d6d; 
+  transform: scale(1.05); 
+}
+
+.btn-facture {
+  background-color: #28a745; 
+}
+.btn-facture:hover {
+  background-color: rgb(189, 15, 220);
+  transform: scale(1.05); 
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Appliquer l'animation au clic (via une classe ajoutée dynamiquement) */
+.bounce-click {
+  animation: bounce 0.3s ease;
+}
+
+/* Ajustements responsive */
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .button-group button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Bloc de recherche : idCOM + bouton */
+.search-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 8px;
+  width: 15vw;
+  border-radius: 4vw;
+  margin-left: auto;
+}
+
+.input-idCOM {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 4vw;
+  box-sizing: border-box;
+  min-width: 100px;
+}
+
+.btn-search {
+  padding: 6px 14px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-search:hover {
+  background-color: rgba(17, 245, 147, 0.763);
+}
+
+.stock-message {
+  color: #007bff;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
